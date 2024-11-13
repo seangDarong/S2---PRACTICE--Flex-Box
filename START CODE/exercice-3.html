@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>header</p>
+        </div>
+
+        <div class="container2">
+            <div class="main">
+                <p>main</p>
+                <div class="row">
+                    <div class="item"><p>item</p></div>
+                    <div class="item"><p>item</p></div>
+                    <div class="item"><p>item</p></div>
+                    <div class="item"><p>item</p></div>
+                    <div class="item"><p>item</p></div>
+                    <div class="item"><p>item</p></div>
+                    <div class="item"><p>item</p></div>
+                    <div class="item"><p>item</p></div>
+                    <div class="item"><p>item</p></div>
+                    <div class="item"><p>item</p></div>
+                    <div class="item"><p>item</p></div>
+                </div>
+            </div>
+
+            <div class="sidebar"><p>
+                sidebar
+            </p></div>
+        </div>
+
+        <div class="footer">
+            <p>footer</p>
+        </div>
+    </div>
+</body>
+
+<style>
+    .header, .main, .sidebar, .footer {
+        padding: 20px;
+        border-radius: 0.5rem;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .header{
+        background-color:#1e90ff;
+        box-shadow: 2px 2px 2px 2px #0077ea ;
+    }
+
+    .container2{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .main{
+        background-color:#3cb371;
+        box-shadow: 2px 2px 2px 2px #2f8d59 ;
+    }
+    .sidebar{
+        background-color: #ff6347;
+        box-shadow: 2px 2px 2px 2px #e02200 ;
+    }
+
+    .footer{
+        background-color: #4169e1;
+        box-shadow:#0077ea;
+        box-shadow: 2px 2px 2px 2px #1d44b8 ;
+    }
+    p{
+        color: white;
+        
+    }
+
+    .row{
+        display:flex;
+        flex-direction: row;
+        gap:1rem;
+        justify-content: center;
+        padding-bottom: 1em;
+        gap: 5;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        
+    }
+
+    .item{
+        height: 50px;
+        width: 50px;
+        border-radius: 0.5em;
+        background-color: #2f8d59;
+        padding: 25px;
+        box-shadow: 2px 2px 2px 2px #226741 ;
+    }
+</style>
+</html>
